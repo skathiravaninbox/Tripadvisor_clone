@@ -9,6 +9,10 @@ A responsive front-end clone of the popular travel platform **Tripadvisor**, bui
 - Fully static front-end (HTML & CSS only)
 - Organized file structure
 
+## 🌐 Live Demo
+(If you plan to deploy it, you can add a link here using GitHub Pages or Netlify)
+> [Live Demo](https://skathiravaninbox.github.io/Udemy-Clone/)
+> 
 ## 🚀 Technologies Used
 
 - HTML5
