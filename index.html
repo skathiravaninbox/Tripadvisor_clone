@@ -1,0 +1,592 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- google font links -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- cascading style sheet link -->
+  <link rel="stylesheet" href="stylesheet.css">
+
+  <!-- font awesome cdn library link for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <title>TripAdvisor_clone</title>
+  <!-- font awesome cdn library link for icons -->
+  <link rel="icon" href="./images/tlogo.png">
+</head>
+
+<body>
+  <!-- navBar section .  navBar section divided into 3 sections  -->
+  <div class="navBar-wrapper">
+    <div class="navBar">
+      <!-- navBar menu for mobile view -->
+       <div class="nav-menu">
+        <i class="fa-solid fa-bars" style="color: #00060f;"></i>
+       </div>          
+      <!-- div container for logo -->
+      <div class="navBar__s1">
+        <img src="./images/tripadvisor_logo.png" alt="Tripadvisor-Clone-Logo">
+      </div>
+      <!-- div container for description details  -->
+      <div class="navBar__s2">
+        <a href="#">Discovery</a>
+        <a href="#">Trip</a>
+        <a href="#">Reviews</a>
+        <a href="#">Forums</a>
+      </div>
+      <!-- div container for location selection and sign in the website -->
+      <div class="navBar__s3">
+
+        <div class="navBar__s3__location">
+          <!-- Global icon link from font awesome  -->
+          <i class="fa-solid fa-globe" style="color: #121212;"></i>
+          <!-- vertical line  -->
+          <span>|</span>
+          <span>INR</span>
+        </div>
+        <div class="navBar__s3__signin">
+          <p>Sign in</p>
+        </div>
+
+      </div>
+       <!-- navBar signin for mobile view -->
+      <div class="nav-signin">
+         <i class="fa-regular fa-user" style="color: #01060e;"></i>
+       </div>
+    </div>
+  </div>
+
+  <!-- Where to go section -->
+  <div class="whereTo">
+    <h1>Where to?</h1>
+  </div>
+
+  <!-- Search bar -->
+  <div class="searchItems">
+    <div class="searchItems__I1">
+      <i class="fa-solid fa-magnifying-glass" style="color: #171717;"></i>
+      <p>Search All</p>
+    </div>
+
+    <div class="searchItems__I2">
+      <i class="fa-solid fa-bed" style="color: #0f0f10;"></i>
+      <p>Hotels</p>
+    </div>
+
+    <div class="searchItems__I3">
+      <i class="fa-solid fa-camera-retro" style="color: #030a17;"></i>
+      <p>Things to Do</p>
+    </div>
+
+    <div class="searchItems__I4">
+      <i class="fa-solid fa-utensils" style="color: #121212;"></i>
+      <p>Restaurants</p>
+    </div>
+
+    <div class="searchItems__I5">
+      <i class="fa-solid fa-plane-up" style="color: #121212;"></i>
+      <p>flights</p>
+    </div>
+
+    <div class="searchItems__I6">
+      <i class="fa-solid fa-house" style="color: #121212;"></i>
+      <p>Holiday Homes</p>
+    </div>
+  </div>
+
+  <!--search bar -->
+  <div class="searchBar">
+    <i class="fa-solid fa-magnifying-glass" style="color: #171717;"></i>
+    <input type="text" placeholder="Places to go,things to do, hotels...">
+    <button>Search</button>
+  </div>
+
+  <!-- world's best hotel img -->
+  <div class="image-container">
+    <img src="./images/Luxury_Hotel.jpg" alt="Beautiful " class="background-img">
+    <div class="content-overlay">
+      <h1>World's best hotels-chosen by you</h1>
+      <h2>From beachside resorts to the most unique stays. See the top 1% of the hotels from Travellers ' Choice Best of
+        the Best and save your faves.</h2>
+      <button>Reveal Winners</button>
+    </div>
+  </div>
+
+  <div class="hotel__desc">
+    <h2>Stay at the world’s top hotels</h2>
+    <p>2025’s Travellers’ Choice Awards Best of the Best Hotels</p>
+  </div>
+
+  
+  <div class="slider-container">
+    <button class="slider-btn prev" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+    <div class="slider-wrapper" id="sliderWrapper">
+      
+      <div class="slider-card">
+        <img src="./images/hot1.jpg" alt="Mountain Temple View">
+        <p class="title">Mountain Temple View</p>
+      </div>
+      <div class="slider-card">
+        <img src="./images/hot2.jpg" alt="Beach Paradise">
+        <p class="title">Beach Paradise</p>
+      </div>
+      <div class="slider-card">
+        <img src="./images/hot3.jpg" alt="City Walk">
+        <p class="title">City Walk</p>
+      </div>
+      <div class="slider-card">
+        <img src="./images/hot4.jpg" alt="Safari Adventure">
+        <p class="title">Safari Adventure</p>
+      </div>
+      <div class="slider-card">
+        <img src="./images/res1.jpg" alt="Mountain Temple View">
+        <p class="title">Mountain Temple View</p>
+      </div>
+      <div class="slider-card">
+        <img src="./images/res2.jpg" alt="Beach Paradise">
+        <p class="title">Beach Paradise</p>
+      </div>
+      <div class="slider-card">
+        <img src="./images/res3.jpg" alt="City Walk">
+        <p class="title">City Walk</p>
+      </div>
+      <div class="slider-card">
+        <img src="./images/res4.jpg" alt="Safari Adventure">
+        <p class="title">Safari Adventure</p>
+      </div>
+
+    </div>
+    <button class="slider-btn next" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+  </div>
+
+  <!-- Tourist places to visit -->
+  <div class="hotel__desc">
+    <h2>Top experiences on Tripadvisor</h2>
+    <p>The best tours, activities and tickets</p>
+  </div>
+  
+  <div class="slider-container">
+    <button class="slider-btn prev" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+    <div class="slider-wrapper" id="sliderWrapper">
+      
+      <div class="slider-card">
+        <img src="./images/res1.jpg" alt="">
+        <button class="heart"><i class="far fa-heart"></i></button>
+        <h3>Half-Day Railway Market and Floating Market Tour in Thailand</h3>
+        <p>4.4 ⭐⭐⭐⭐ (3,123)</p>
+        <p><strong>from ₹2,325 per adult</strong></p>
+      </div>
+      <div class="slider-card">
+        <img src="./images/res2.jpg" alt="">
+        <button class="heart"><i class="far fa-heart"></i></button>
+        <h3>Fontainhas Heritage Walk by Make It Happen</h3>
+        <p>4.7 ⭐⭐⭐⭐ (4,012)</p>
+        <p><strong>from ₹1,800 per adult</strong></p>
+      </div>
+      <div class="slider-card">
+        <img src="./images/res3.jpg" alt="">
+        <button class="heart"><i class="far fa-heart"></i></button>
+        <h3>Cu Chi Tunnels and Mekong Delta Full Day Tour</h3>
+        <p>4.9 ⭐⭐⭐⭐ (3,145)</p>
+        <p><strong>from ₹3,770 per adult</strong></p>
+      </div>
+      <div class="slider-card">
+        <img src="./images/res4.jpg" alt="">
+        <button class="heart"><i class="far fa-heart"></i></button>
+        <h3>Ninh Binh Full-Day Tour from Hanoi</h3>
+        <p>4.1 ⭐⭐⭐⭐ (4,050)</p>
+        <p><strong>from ₹3,750 per adult</strong></p>
+      </div>
+      <div class="slider-card">
+        <img src="./images/hot5.jpg" alt="">
+        <button class="heart"><i class="far fa-heart"></i></button>
+        <h3>Fontainhas Heritage Walk by Make It Happen</h3>
+        <p>4.5 ⭐⭐⭐⭐ (2,874)</p>
+        <p><strong>from ₹2,294 per adult</strong></p>
+      </div>
+      <div class="slider-card">
+        <img src="./images/hot6.jpg" alt="">
+        <button class="heart"><i class="far fa-heart"></i></button>
+        <h3>Cu Chi Tunnels and Mekong Delta Full Day Tour</h3>
+        <p>4.6 ⭐⭐⭐⭐⭐(2,228)</p>
+        <p><strong>from ₹2,354 per adult</strong></p>
+      </div>
+      <div class="slider-card">
+        <img src="./images/hot7.jpg" alt="">
+        <button class="heart"><i class="far fa-heart"></i></button>
+        <h3>Ninh Binh Full-Day Tour from Hanoi</h3>
+        <p>4.0 ⭐⭐⭐⭐⭐(4,194)</p>
+        <p><strong>from ₹4,050 per adult</strong></p>
+      </div>
+      <div class="slider-card">
+        <img src="./images/hot8.jpg" alt="">
+        <button class="heart"><i class="far fa-heart"></i></button>
+        <h3>Half-Day Railway Market and Floating Market Tour in Thailand</h3>
+        <p>4.7 ⭐⭐⭐⭐ (4,077)</p>
+        <p><strong>from ₹3,080 per adult</strong></p>
+      </div>
+      
+    </div>
+    <button class="slider-btn next" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+  </div>
+
+
+  <!-- More to explore -->
+  <div class="explore">
+    <h2>More to explore</h2>
+    <div class="slider-container">
+      <button class="slider-btn prev" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+      <div class="slider-wrapper" id="sliderWrapper">
+       
+        <div class="slider-card">
+          <img src="./images/hot5.jpg" alt="">
+          <button class="heart"><i class="far fa-heart"></i></button>
+          <h3 class="center">7 Bangkok hotels that highlight Thailand's spectacular architecture</h3>
+        </div>
+        <div class="slider-card">
+          <img src="./images/hot6.jpg" alt="">
+          <button class="heart"><i class="far fa-heart"></i></button>
+          <h3 class="center">3 days in Tokyo: The perfect itinerary</h3>
+        </div>
+        <div class="slider-card">
+          <img src="./images/hot7.jpg" alt="">
+          <button class="heart"><i class="far fa-heart"></i></button>
+          <h3 class="center">Where Bali’s best chefs go on their days off</h3>
+        </div>
+        <div class="slider-card">
+          <img src="./images/hot8.jpg" alt="">
+          <button class="heart"><i class="far fa-heart"></i></button>
+          <h3 class="center">6 incredible places to visit near Phuket</h3>
+        </div>
+        <div class="slider-card">
+          <img src="./images/hot1.jpg" alt="">
+          <button class="heart"><i class="far fa-heart"></i></button>
+          <h3 class="center"></h3>
+        </div>
+        <div class="slider-card">
+          <img src="./images/hot2.jpg" alt="">
+          <button class="heart"><i class="far fa-heart"></i></button>
+          <h3 class="center">11 gorgeous places in India that have to be seen to be believed</h3>
+        </div>
+        <div class="slider-card">
+          <img src="./images/hot3.jpg" alt="">
+          <button class="heart"><i class="far fa-heart"></i></button>
+          <h3 class="center">17 cool stays by the water for a once-in-a-lifetime trip</h3>
+        </div>
+        <div class="slider-card">
+          <img src="./images/hot4.jpg" alt="">
+          <button class="heart"><i class="far fa-heart"></i></button>
+          <h3 class="center">16 stunning infinity pools in the world that are worth the trip</h3>
+        </div>
+
+      </div>
+      <button class="slider-btn next" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+    </div>
+  </div>
+
+  <!-- Next Trip plan -->
+
+  <div class="hotel__desc">
+    <h2>Dream Your Next Trip</h2>
+    <p>Weekend getaways from Chennai(Madras)</p>
+  </div>
+  
+  <div class="slider-container">
+    <button class="slider-btn prev" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+    <div class="slider-wrapper" id="sliderWrapper">
+      
+      <div class="slider-card">
+        <img src="./images/hot1.jpg" alt="">
+        <p class="title">Mahabalipuram,India</p>
+      </div>
+      <div class="slider-card">
+        <img src="./images/hot2.jpg" alt="">
+        <p class="title">Bengaluru,India</p>
+      </div>
+      <div class="slider-card">
+        <img src="./images/hot3.jpg" alt="">
+        <p class="title">Trichy,India</p>
+      </div>
+      <div class="slider-card">
+        <img src="./images/hot4.jpg" alt="">
+        <p class="title">Tirupati,India</p>
+      </div>
+      <div class="slider-card">
+        <img src="./images/hot5.jpg" alt="">
+        <p class="title">Mountain Temple View</p>
+      </div>
+      <div class="slider-card">
+        <img src="./images/hot6.jpg" alt="">
+        <p class="title">Beach Paradise</p>
+      </div>
+      <div class="slider-card">
+        <img src="./images/hot7.jpg" alt="">
+        <p class="title">City Walk</p>
+      </div>
+      <div class="slider-card">
+        <img src="./images/hot8.jpg" alt="">
+        <p class="title">Safari Adventure</p>
+      </div>
+
+    </div>
+    <button class="slider-btn next" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+  </div>
+
+   <!-- Top Destination Details for next trip -->
+  <div class="hotel__desc">
+    <h2>Top destinations for your next holiday</h2>    
+  </div>
+  
+  <div class="slider-container">
+    <button class="slider-btn prev" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+    <div class="slider-wrapper" id="sliderWrapper">
+     
+      <div class="slider-card">
+        <img src="./images/hot8.jpg" alt="">
+        <p class="title">Rome,Italy</p>
+      </div>
+      <div class="slider-card">
+        <img src="./images/hot7.jpg" alt="">
+        <p class="title">Paris, France</p>
+      </div>
+      <div class="slider-card">
+        <img src="./images/hot6.jpg" alt="">
+        <p class="title">Las Vegas,NV</p>
+      </div>
+      <div class="slider-card">
+        <img src="./images/hot5.jpg" alt="">
+        <p class="title">London,UK</p>
+      </div>
+      <div class="slider-card">
+        <img src="./images/hot1.jpg" alt="">
+        <p class="title">Florence,Italy</p>
+      </div>
+      <div class="slider-card">
+        <img src="./images/hot2.jpg" alt="">
+        <p class="title">New York City,NY</p>
+      </div>
+      <div class="slider-card">
+        <img src="./images/hot3.jpg" alt="">
+        <p class="title">City Walk</p>
+      </div>
+      <div class="slider-card">
+        <img src="./images/hot4.jpg" alt="">
+        <p class="title">Safari Adventure</p>
+      </div>
+
+    </div>
+    <button class="slider-btn next" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+  </div>
+
+  <!-- Top Destination Details for next trip -->
+  <div class="hotel__desc">
+    <h2>Top destinations for your next holiday</h2>
+    <p>Here's where your fellow travellers are headed</p>
+  </div>
+  
+  <div class="slider-container">
+    <button class="slider-btn prev" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+    <div class="slider-wrapper" id="sliderWrapper">
+     
+      <div class="slider-card">
+        <img src="./images/hot1.jpg" alt="">
+        <p class="title">Bangkok,Thailand</p>
+      </div>
+      <div class="slider-card">
+        <img src="./images/hot2.jpg" alt="">
+        <p class="title">Singapore</p>
+      </div>
+      <div class="slider-card">
+        <img src="./images/hot3.jpg" alt="">
+        <p class="title">Mumbai,India</p>
+      </div>
+      <div class="slider-card">
+        <img src="./images/hot4.jpg" alt="">
+        <p class="title">Bali, Indonesia</p>
+      </div>
+      <div class="slider-card">
+        <img src="./images/hot1.jpg" alt="">
+        <p class="title">Dubai, UAE</p>
+      </div>
+      <div class="slider-card">
+        <img src="./images/hot2.jpg" alt="">
+        <p class="title">Hanoi,Vietnam</p>
+      </div>
+      <div class="slider-card">
+        <img src="./images/hot3.jpg" alt="">
+        <p class="title">City Walk</p>
+      </div>
+      <div class="slider-card">
+        <img src="./images/hot4.jpg" alt="">
+        <p class="title">Safari Adventure</p>
+      </div>
+
+    </div>
+    <button class="slider-btn next" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+  </div>
+
+  <!-- sponser container -->
+  <div class="container-wrapper">
+    <div class="left-container">
+      <h1>Travellers' Choice Awards Best of the Best</h1>
+      <p>Among our top 1% of places, stays, eats, and experiences—decided by you.</p>
+      <button>See the Winners</button>
+    </div>
+
+    <div class="right-container">
+      <img src="./images/Luxury_Hotel.jpg" alt="Travel Image">
+    </div>
+  </div>
+
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-left">
+        <div class="footer-col">
+          <h4>About Tripadvisor</h4>
+          <ul>
+            <li>About Us</li>
+            <li>Press</li>
+            <li>Resources and Policies</li>
+            <li>Careers</li>
+            <li>Trust & Safety</li>
+            <li>Contact us</li>
+            <li>Accessibility Statement</li>
+            <li>Tripadvisor Technology</li>
+            <li>Blog</li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li>Write a review</li>
+            <li>Add a </li>
+            <li>Join</li>
+            <li>Travellers' Choice</li>
+            <li>Help Centre</li>
+            <li>Travel Stories</li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Do Business With Us</h4>
+          <ul>
+            <li>Owners & DMO/CVB</li>
+            <li>Business Advantage</li>
+            <li>Sponsored Placements</li>
+            <li>Access our Content API</li>
+          </ul>
+          <h4>Get The App</h4>
+          <ul>
+            <li>iPhone App</li>
+            <li>Android App</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-right">
+        <div class="footer-col">
+          <h4>Tripadvisor Sites</h4>
+          <ul>
+            <li>Book tours and attraction tickets on <a href="#">Viator</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <img src="./images/tlogo.png" alt="Logo">
+
+      <div class="footer-bottom-left">
+        <p>© 2025 Tripadvisor LLC All rights reserved.</p>
+        <div class="footer-links">
+          <a href="#">Terms of Use</a>
+          <a href="#">Privacy and Cookies Statement</a>
+          <a href="#">Cookie consent</a>
+          <a href="#">Site Map</a>
+          <a href="#">How the site works</a>
+          <a href="#">Contact us</a>
+        </div>
+        <p class="footer-note">
+          This is the version of our website addressed to speakers of English in India. If you are a resident of another
+          country or region, please select the appropriate version of Tripadvisor for your country or region in the
+          drop-down menu. <strong>Show more</strong>
+        </p>
+      </div>
+
+      <div class="footer-bottom-right">
+        <select>
+          <option>₹ INR</option>
+          <option>$ USD</option>
+        </select>
+        <select>
+          <option>India</option>
+          <option>USA</option>
+        </select>
+
+        <div class="social-icons">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-x-twitter"></i>
+          <i class="fab fa-pinterest-p"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-youtube"></i>
+          <i class="fab fa-tiktok"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+
+    const navWrapper = document.querySelector('.navBar-wrapper');
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 0) {
+        navWrapper.classList.add('sticky');
+      } else {
+        navWrapper.classList.remove('sticky');
+      }
+    });
+    // Select all slider containers
+    document.querySelectorAll('.slider-container').forEach((container) => {
+      const wrapper = container.querySelector('.slider-wrapper');
+      const prevBtn = container.querySelector('.prev');
+      const nextBtn = container.querySelector('.next');
+
+      function updateArrowVisibility() {
+        prevBtn.style.display = wrapper.scrollLeft > 0 ? 'block' : 'none';
+        nextBtn.style.display =
+          wrapper.scrollLeft + wrapper.offsetWidth < wrapper.scrollWidth - 5
+            ? 'block'
+            : 'none';
+      }
+
+      prevBtn.addEventListener('click', () => {
+        wrapper.scrollBy({ left: -wrapper.offsetWidth, behavior: 'smooth' });
+      });
+
+      nextBtn.addEventListener('click', () => {
+        wrapper.scrollBy({ left: wrapper.offsetWidth, behavior: 'smooth' });
+      });
+
+      wrapper.addEventListener('scroll', updateArrowVisibility);
+      window.addEventListener('resize', updateArrowVisibility);
+
+      // Init
+      updateArrowVisibility();
+    });
+  </script>
+
+</body>
+
+</html>
